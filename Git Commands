@@ -1,0 +1,31 @@
+yum install git -y To install git in linux machine
+git init . To initialize empty repo in current directory
+git config user.name "username" used to configure user name for our git
+git config user.email "email" used to configure user email for our git
+git add filename used to track a file
+git add * used to track all files & folders
+git add . used to track all files in current directory (including hidden files)
+git add -f filename to track files forcefully 
+git rm --cached filename used to untack the file
+git commit -m "message" filename to commit a file
+git commit -m "message" . used to commit all files which are present in staging area
+git log used to see the history of the git
+git log --oneline used to see only commit ID's and messages
+git log -1 used to see the latest commit
+git log -3 used to see latest 3 commits
+git log --follow --all filename used to see the no of commits for a single file
+git show commit_id --name-only used to see all the commit details along with the file name
+git show commit_id --stat see the histroy of a file (modifications, data add and deletion)
+git commit --amend -m "message" used to change the commit message for a latest commit
+git commit --amend --author "username <mail>" used to change the author of latest commit 
+git commit --amend --no-edit used to commit the changes with previous commit
+git reset --hard HEAD~1 used to delete the latest commit along with the changes
+git reset --hard HEAD~3 used to delete the latest 3 commits along with the changes
+git resert --soft HEAD~1 used to delete only commits but not actions/changes
+git resert --soft HEAD~3 used to delete only latest commits but not actions/changes
+git revert commit_id used to delete a particular commit action and add a new commit for the change
+git branch used to see the list of branches
+git branch branch-name to create a branch
+git checkout branch-name to switch one branch to another
+git checkout -b branch-name used to create and switch a branch at a time
+git branch -m old-branch new-branch used to rename a branch
